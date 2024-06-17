@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>HRRN</title>
+        <link href="css/default.css" rel="stylesheet">
+        
+
+    </head>
+    <body>
+        <div id="heading1">
+            <h1 style="text-align: center;">Results for HRRN algorithm<span><a href="index.html" class="tron">HOME</a></span></h1>
+            
+        </div>
+        
+        <div id="text1">
+            <h2>🚩Highest Response Ratio Next (HRNN) is one of the most optimal scheduling algorithms.<br>🚩 This is a non-preemptive algorithm in which, the scheduling is done on the basis of an extra parameter called Response Ratio.<br>🚩 A Response Ratio is calculated for each of the available jobs and the Job with the highest response ratio is given priority over the others.
+                <br>🚩Response Ratio is calculated by the given formula.
+                Response Ratio = (W+S)/S</h2>
+        </div>
+
+        <div class="chart-container" id="left">
+            <canvas id="bar-chartcanvas"></canvas>
+        </div>
+
+        <div class="chart-container-p" id="right">
+            <div class="pie-chart-container">
+                <canvas id="pie-chartcanvas-1"></canvas>
+            </div>
+        </div>
+
+        <style>
+            .demo {
+                border:1px solid #1C0DE7;
+                border-collapse:collapse;
+                border-spacing:2px;
+                padding:5px;
+            }
+            .demo th {
+                border:1px solid #1C0DE7;
+                padding:5px;
+                background:#F53505;
+            }
+            .demo td {
+                border:1px solid #1C0DE7;
+                text-align:center;
+                padding:5px;
+                background:#F3F702;
+            }
+        </style>
+        <div id="table1">
+        <table class="demo">
+            <caption style="font-weight: bold;font-size: large;">Testcase 1</caption>
+            <thead>
+            <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>&nbsp;P1</td>
+                <td>&nbsp;0</td>
+                <td>3&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;P2</td>
+                <td>&nbsp;2</td>
+                <td>6&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;P3</td>
+                <td>&nbsp;4</td>
+                <td>4&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;P4</td>
+                <td>&nbsp;6</td>
+                <td>5&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;P5</td>
+                <td>&nbsp;8</td>
+                <td>2&nbsp;</td>
+            </tr>
+            <tbody>
+        </table>
+        </div>
+        
+            <div id="table2">
+                <table class="demo">
+                    <caption style="font-weight: bold;font-size: large;">Testcase 2</caption>
+                    <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>&nbsp;P1</td>
+                        <td>&nbsp;0</td>
+                        <td>21&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;P2</td>
+                        <td>&nbsp;1</td>
+                        <td>3&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;P3</td>
+                        <td>&nbsp;2</td>
+                        <td>6&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;P4</td>
+                        <td>&nbsp;3</td>
+                        <td>4&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;P5</td>
+                        <td>&nbsp;4</td>
+                        <td>2&nbsp;</td>
+                    </tr>
+                    <tbody>
+                </table>
+                </div>
+                <div id="table3">
+                    <table class="demo">
+                        <caption style="font-weight: bold;font-size: large;">Testcase 3</caption>
+                        <thead>
+                        <tr>
+                            <th>Process</th>
+                            <th>Arrival Time</th>
+                            <th>Burst Time</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;P1</td>
+                            <td>&nbsp;2</td>
+                            <td>6&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;P2</td>
+                            <td>&nbsp;5</td>
+                            <td>2&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;P3</td>
+                            <td>&nbsp;1</td>
+                            <td>8&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;P4</td>
+                            <td>&nbsp;0</td>
+                            <td>3&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;P5</td>
+                            <td>&nbsp;4</td>
+                            <td>4&nbsp;</td>
+                        </tr>
+                        <tbody>
+                    </table>
+                    </div>
+
+        <script src="js/Chart.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+        <script src="js/bar.js"></script>
+        <script src="js/pie.js"></script>
+    </body>
+</html>
