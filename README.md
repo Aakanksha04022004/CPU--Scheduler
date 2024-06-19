@@ -28,3 +28,28 @@ The algorithm maintains a queue of processes, where each process is given a burs
 This algorithm can be beneficial in situations where the objective is to minimize the average waiting time for processes, since shorter processes will be executed first, and thus will spend less time waiting in the queue. Additionally, it can be useful in situations where the burst time of processes is not known in advance, since the algorithm can adapt to changes in the remaining time as the process is executing.
 
 In summary, SRT is a scheduling algorithm that prioritizes the execution of processes based on their remaining time, it's a preemptive algorithm, which means that it can interrupt a process that's already executing if a new process with a shorter remaining time arrives and it's commonly used in situations where the objective is to minimize the average waiting time for processes and burst time is not known in advance.
+
+First Come First Serve (FCFS)
+1. Pros: Simple, easy to implement.
+2. Cons: Poor performance with varying process lengths, can lead to long waiting times.
+3. Best For: Simple, non-time-critical systems.
+
+Round Robin with Varying Time Quantum (RR)
+1. Pros: Fair, predictable, good for responsiveness in interactive systems.
+2. Cons: Can have high average waiting time and context switching overhead.
+3. Best For: Time-sharing systems needing fairness and quick responses.
+
+Shortest Process Next (SPN)
+1. Pros: Minimizes average waiting and turnaround time for non-preemptive scheduling.
+2. Cons: Can cause starvation of longer processes, not ideal for interactive systems.
+3. Best For: Batch processing with predictable job lengths.
+
+Shortest Remaining Time (SRT)
+1. Pros: Minimizes average waiting and turnaround time.
+2. Cons: High context switching overhead, possible starvation of long processes.
+3. Best For: Systems needing quick response times and predictable job lengths.
+
+Conclusion
+Best Overall for Interactive Systems: Round Robin (RR).
+Best for Minimizing Waiting Time: Shortest Remaining Time (SRT) or Shortest Process Next (SPN), depending on whether preemption is acceptable.
+Easiest to Implement: First Come First Serve (FCFS).
